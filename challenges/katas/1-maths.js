@@ -2,18 +2,22 @@
 // Important! Don't change the name of the functions.
 
 function modulo(a, b) {
+  return a % b;
   // return the remainder of the division a / b
 }
 
 function squareRoot(n) {
-  // return the square root of n
-}
+  return Math.sqrt(n);
+// return the square root of n
+} 
 
 function raiseToPower(m, n) {
+  return Math.pow(m, n);
   // return the result of raising m to the nth power
 }
 
 function formatMoney(amount) {
+  return "£" + amount.toFixed(2);
   /*
    * return a the amount formatted into pounds sterling
    * Amounts should be a string with the £ symbol in front
@@ -26,20 +30,29 @@ function formatMoney(amount) {
 }
 
 function calculateCircleArea(r) {
+  const area = Math.PI * Math.pow(r, 2);
+  return area.toFixed(3);
   // return the area of a circle with radius r
   // round result to 3 decimal numbers
 }
 
 function calculateFullTurns(degrees) {
+  const fullTurns = degrees / 360;
+  return Math.floor(fullTurns);
   // return the number of full turns you can make with the provided degrees
   // 1 full turn === 360 degrees
 }
 
 function findSmallestAndBiggest(arr) {
+  const smallest = Math.min(...arr);
+  const biggest = Math.max(...arr);
+  return [smallest, biggest];
   // given an array, return a new array containing the smallest and biggest values of the original array.
 }
 
 function splitTheBeans(totalCost, numOfPeople) {
+  const costPerPerson = Math.round(totalCost / numOfPeople);
+  return costPerPerson;
   /* 
   
   The Northcoders staff have gone for a coffee run and they are all bad at maths. 
